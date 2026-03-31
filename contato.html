@@ -38,6 +38,18 @@
                     <li><strong>Telefone:</strong> (11) 1234-5678</li>
                     <li><strong>Email:</strong> contato@empresa.com</li>
                 </ul>
+                <form action="enviar_contato.php" method="post">
+                    <label for="nome">Nome:</label><br>
+                    <input type="text" id="nome" name="nome" required><br><br>
+
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" required><br><br>
+
+                    <label for="mensagem">Mensagem:</label><br>
+                    <textarea id="mensagem" name="mensagem" rows="4" required></textarea><br><br>
+
+                    <input type="submit" value="Enviar">
+                </form>
                 <script>
                     !function () {
                         let e = document.currentScript, r = document.createElement("script");
